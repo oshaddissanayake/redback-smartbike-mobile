@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Card, CardBody, Col, Container, Input, Label, Row, Button, Form, FormFeedback, Alert, Spinner } from 'reactstrap';
-import ParticlesAuth from "../AuthenticationInner/ParticlesAuth";
 
 //redux
 import { useSelector, useDispatch } from "react-redux";
@@ -92,13 +91,12 @@ const Login = (props: any) => {
     document.title = "Redback Admin";
     return (
         <React.Fragment>
-            <ParticlesAuth>
-                <div className="auth-page-content">
-                    <Container>
-                        <Row className="justify-content-center">
-                            <Col md={8} lg={6} xl={5}>
-                                <Card className="mt-4">
-                                    <CardBody className="p-4">
+            <div className="auth-page-content">
+                <Container>
+                    <Row className="justify-content-center">
+                        <Col md={8} lg={6} xl={5}>
+                            <Card className="mt-4">
+                                <CardBody className="p-4">
                                         <div className="text-center mt-2">
                                             <h5 className="text-primary">Redback Admin</h5>
                                             <p className="text-muted">Sign in to continue.</p>
@@ -184,7 +182,6 @@ const Login = (props: any) => {
                         </Row>
                     </Container>
                 </div>
-            </ParticlesAuth>
         </React.Fragment>
     );
 };

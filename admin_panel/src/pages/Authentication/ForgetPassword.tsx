@@ -18,7 +18,6 @@ import { userForgetPassword } from "../../slices/thunks";
 // import images
 // import profile from "../../assets/images/bg.png";
 import logoLight from "../../assets/images/logo-light.png";
-import ParticlesAuth from "../AuthenticationInner/ParticlesAuth";
 import { createSelector } from "reselect";
 
 const ForgetPasswordPage = (props: any) => {
@@ -55,12 +54,11 @@ const ForgetPasswordPage = (props: any) => {
   document.title = "Reset Password | Velzon - React Admin & Dashboard Template";
 
   return (
-    <ParticlesAuth>
-      <div className="auth-page-content">
-        <Container>
-          <Row>
-            <Col lg={12}>
-              <div className="text-center mt-sm-5 mb-4 text-white-50">
+    <div className="auth-page-content">
+      <Container>
+        <Row>
+          <Col lg={12}>
+            <div className="text-center mt-sm-5 mb-4 text-white-50">
                 <div>
                   <Link to="/" className="d-inline-block auth-logo">
                     <img src={logoLight} alt="" height="20" />
@@ -140,7 +138,6 @@ const ForgetPasswordPage = (props: any) => {
           </Row>
         </Container>
       </div>
-    </ParticlesAuth>
   );
 };
 
